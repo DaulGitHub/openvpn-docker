@@ -13,5 +13,5 @@ RUN apt-get update \
 
 COPY ./conf/ /ovpnconf/
 
-CMD ["openvpn", "--config", "/ovpnconf/config_linux.conf", "--daemon"]
+CMD ["openvpn", "--config", "/ovpnconf/config_linux.conf"]
 
