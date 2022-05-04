@@ -7,6 +7,6 @@ RUN apt-get update \
     && chmod 600 /dev/net/tun
 
 COPY ./conf/ /ovpnconf/
+WORKDIR /ovpnconf
 
 CMD ["openvpn", "--config", "/ovpnconf/config_linux.conf"]
-
